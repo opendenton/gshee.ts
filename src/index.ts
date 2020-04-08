@@ -5,7 +5,7 @@ const GST_PREFIX = /^gsx\$/
 /**
  *
  * @param key         A worksheet ID
- * @example           .../worksheets/${key}/public/...
+ * @example           .../worksheets/<KEY>/public/...
  * @returns           A url point for retrieving json
  */
 const buildIndexUrl = (key: string) =>

@@ -4,7 +4,7 @@
   "description": "A simple library for retrieving data from Google Sheets",
   "scripts": {
     "build": "babel src --out-dir lib --extensions '.ts'",
-    "build:types": "tsc --emitDeclarationOnly",
+    "build:types": "tsc --emitDeclarationOnly --declarationDir types",
     "docs": "typedoc",
     "test": "jest"
   },
