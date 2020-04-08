@@ -1,0 +1,41 @@
+{
+  "name": "gshee.ts",
+  "version": "1.0.0",
+  "description": "A simple library for retrieving data from Google Sheets",
+  "scripts": {
+    "docs": "typedoc --out docs src"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/opendenton/gshee.ts.git"
+  },
+  "keywords": [
+    "gsheets",
+    "google",
+    "sheets",
+    "typescript",
+    "axios",
+    "simple",
+    "easy",
+    "denton"
+  ],
+  "author": "Dan Minshew (@newswim)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/opendenton/gshee.ts/issues"
+  },
+  "homepage": "https://github.com/opendenton/gshee.ts#readme",
+  "dependencies": {
+    "axios": "^0.19.2"
+  },
+  "devDependencies": {
+    "axios-mock-adapter": "^1.18.1",
+    "typedoc": "^0.17.4",
+    "typescript": "^3.8.3"
+  },
+  "prettier": {
+    "semi": false,
+    "trailingComma": "es5",
+    "singleQuote": true
+  }
+}
