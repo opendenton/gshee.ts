@@ -3,7 +3,10 @@
   "version": "1.0.0",
   "description": "A simple library for retrieving data from Google Sheets",
   "scripts": {
-    "docs": "typedoc --out docs src"
+    "build": "babel src --out-dir lib --extensions '.ts'",
+    "build:types": "tsc --emitDeclarationOnly",
+    "docs": "typedoc",
+    "test": "jest"
   },
   "repository": {
     "type": "git",
@@ -25,17 +28,24 @@
     "url": "https://github.com/opendenton/gshee.ts/issues"
   },
   "homepage": "https://github.com/opendenton/gshee.ts#readme",
-  "dependencies": {
-    "axios": "^0.19.2"
-  },
-  "devDependencies": {
-    "axios-mock-adapter": "^1.18.1",
-    "typedoc": "^0.17.4",
-    "typescript": "^3.8.3"
-  },
   "prettier": {
     "semi": false,
     "trailingComma": "es5",
     "singleQuote": true
+  },
+  "dependencies": {
+    "axios": "^0.19.2"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.8.4",
+    "@babel/core": "^7.9.0",
+    "@babel/preset-env": "^7.9.5",
+    "@babel/preset-typescript": "^7.9.0",
+    "@types/jest": "^25.2.1",
+    "axios-mock-adapter": "^1.18.1",
+    "core-js": "3.6.4",
+    "jest": "^25.2.7",
+    "typedoc": "^0.17.4",
+    "typescript": "^3.8.3"
   }
 }
