@@ -1,9 +1,10 @@
 {
   "compilerOptions": {
     "declaration": true,
+    "removeComments": true,
     "declarationDir": "./dist",
-    "lib": ["ES2015", "DOM"],
-    "module": "commonjs",
+    "lib": ["ES2016", "DOM"],
+    "module": "CommonJS",
     "moduleResolution": "node",
     "noImplicitAny": true,
     "strict": true,
@@ -13,7 +14,9 @@
   "exclude": ["node_modules", "dist"],
   "typedocOptions": {
     "inputFiles": ["./src"],
-    "mode": "modules",
-    "out": "docs"
+    "mode": "library",
+    "out": "docs",
+    "excludeNotExported": true,
+    "hideGenerator": true
   }
 }
